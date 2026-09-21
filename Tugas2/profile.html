@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - ZAYAD KANANI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f14;
+            color: #e8edf2;
+            min-height: 100vh;
+            padding: 30px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .profile-card {
+            background: #111820;
+            border: 1px solid #263442;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #111c27, #182734);
+            padding: 45px 30px;
+            text-align: center;
+            border-bottom: 1px solid #263442;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00d9ff;
+            box-shadow: 0 0 25px rgba(0, 217, 255, 0.25);
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .header p {
+            color: #00d9ff;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 20px;
+            color: #00d9ff;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #263442;
+        }
+
+        /* BIODATA */
+        .biodata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .info-box {
+            background: #0d141b;
+            border: 1px solid #202d39;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .label {
+            display: block;
+            color: #7f909e;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        .value {
+            color: #ffffff;
+            font-size: 15px;
+            word-break: break-word;
+        }
+
+        /* PENDIDIKAN */
+        .education {
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .education::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            bottom: 5px;
+            width: 2px;
+            background: #00d9ff;
+        }
+
+        .education-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding: 18px;
+            background: #0d141b;
+            border: 1px solid #202d39;
+            border-radius: 12px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-item::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #00d9ff;
+            left: -26px;
+            top: 22px;
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.7);
+        }
+
+        .education-year {
+            color: #00d9ff;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .education-item h3 {
+            color: #ffffff;
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .education-item p {
+            color: #8d9ba7;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #263442;
+            color: #697986;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 650px) {
+
+            body {
+                padding: 15px 10px;
+            }
+
+            .header {
+                padding: 35px 20px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .photo {
+                width: 125px;
+                height: 125px;
+            }
+
+            .content {
+                padding: 25px 18px;
+            }
+
+            .biodata {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile-card">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <!-- Ganti foto.jpg dengan nama file foto kamu -->
+                <img
+                    src="https://f.top4top.io/p_3916e9dj21.jpg"
+                    alt="Foto Profil"
+                    class="photo"
+                >
+
+                <h1>ZAYAD KANANI</h1>
+
+                <p>MAHASISWA TEKNOLOGI INFORMASI</p>
+
+            </header>
+
+
+            <!-- CONTENT -->
+            <main class="content">
+
+                <!-- BIODATA -->
+                <section class="section">
+
+                    <h2 class="section-title">
+                        Data Pribadi
+                    </h2>
+
+                    <div class="biodata">
+
+                        <div class="info-box">
+                            <span class="label">Nama Lengkap</span>
+                            <span class="value">
+                                ZAYAD KANANI
+                            </span>
+                        </div>
+
+                        <div class="info-box">
+                            <span class="label">Jenis Kelamin</span>
+                            <span class="value">
+                                Laki-laki
+                            </span>
+                        </div>
+
+                        <div class="info-box">
+                            <span class="label">Alamat</span>
+                            <span class="value">
+                                Desa Kabul
+                            </span>
+                        </div>
+
+                        <div class="info-box">
+                            <span class="label">No. HP</span>
+                            <span class="value">
+                                089671925458
+                            </span>
+                        </div>
+
+                        <div class="info-box">
+                            <span class="label">Email</span>
+                            <span class="value">
+                                kp6763057@gmail.com
+                            </span>
+                        </div>
+
+                        <div class="info-box">
+                            <span class="label">Program Studi</span>
+                            <span class="value">
+                                Teknik / Teknologi Informasi
+                            </span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RIWAYAT PENDIDIKAN -->
+                <section class="section">
+
+                    <h2 class="section-title">
+                        Riwayat Pendidikan
+                    </h2>
+
+                    <div class="education">
+
+                        <div class="education-item">
+
+                            <div class="education-year">
+                                2026
+                            </div>
+
+                            <h3>
+                                Perguruan Tinggi
+                            </h3>
+
+                            <p>
+                                Program Studi Teknik / Teknologi Informasi
+                            </p>
+
+                        </div>
+
+
+                        <div class="education-item">
+
+                            <div class="education-year">
+                                2022
+                            </div>
+
+                            <h3>
+                                SMA / SMK / MA
+                            </h3>
+
+                            <p>
+                                Yayasan Ponpes Modern Samsyul Ma'arif
+                            </p>
+
+                        </div>
+
+
+                        <div class="education-item">
+
+                            <div class="education-year">
+                                2014
+                            </div>
+
+                            <h3>
+                                SMP / MTs
+                            </h3>
+
+                            <p>
+                                Yayasan Ponpes Modern Samsyul Ma'arif
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <!-- FOOTER -->
+            <footer class="footer">
+
+                © 2026 ZAYAD KANANI — Personal Profile
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
